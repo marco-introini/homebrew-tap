@@ -3,7 +3,7 @@ cask "certinfo" do
   name "certinfo"
   desc "CLI tool to analyze X.509 certificates and private keys"
   homepage "https://github.com/marco-introini/certinfo"
-  version "0.1.0"
+  version "0.1.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "certinfo" do
     on_intel do
       url "https://github.com/marco-introini/certinfo/releases/download/v#{version}/certinfo_Darwin_x86_64.tar.gz",
         using: :homebrew_curl
-      sha256 "76f770f207d81dfbafb13ba175396a2b970f403f415cb56380ca6e942aa3975e"
+      sha256 "dd83dbf9a3b9e667a486f6554320ab824cc6034c691ce12818acb5c5c0e24b43"
     end
     on_arm do
       url "https://github.com/marco-introini/certinfo/releases/download/v#{version}/certinfo_Darwin_arm64.tar.gz",
         using: :homebrew_curl
-      sha256 "4cb3ee03ef2e62a482870679ac5bca3b6b2c3d0abe6e76045fed843dc1771a9b"
+      sha256 "4523bfa8e990514694532872dd19a9a83c2578f8f8e9433e501ef887e1537144"
     end
   end
 
@@ -28,12 +28,12 @@ cask "certinfo" do
     on_intel do
       url "https://github.com/marco-introini/certinfo/releases/download/v#{version}/certinfo_Linux_x86_64.tar.gz",
         using: :homebrew_curl
-      sha256 "41c6422324ad4d3c1de68747569913a217248752e23b87115f2b9d3b8200cf4c"
+      sha256 "ec13b32db0f86d6addcfa99d4968e7f1a4e32c4676932b7f700238de97d571d4"
     end
     on_arm do
       url "https://github.com/marco-introini/certinfo/releases/download/v#{version}/certinfo_Linux_arm64.tar.gz",
         using: :homebrew_curl
-      sha256 "5cc72b0052380211602c7620754da77d61f7b1a1c3607d823c551863bc926c01"
+      sha256 "d7585b49ff1d4cf186b13689b73a478f531b17148011ddc3a07c731c790a53ea"
     end
   end
 
