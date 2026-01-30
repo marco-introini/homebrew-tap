@@ -5,21 +5,21 @@
 class Certinfo < Formula
   desc "CLI tool to analyze X.509 certificates and private keys"
   homepage "https://github.com/marco-introini/certinfo"
-  version "0.2.2"
+  version "1.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/marco-introini/certinfo/releases/download/v0.2.2/certinfo_Darwin_x86_64.tar.gz"
-      sha256 "86af539bb3c4b15130c0addb0a520c6605034605c9a5b82cafe4dcdc839d7cee"
+      url "https://github.com/marco-introini/certinfo/releases/download/v1.0.0/certinfo_Darwin_x86_64.tar.gz"
+      sha256 "65d3530bc4e21e7f4b1dcb5ba0836bcf8b4019ac03893625b5af1bacd110fef5"
 
       def install
         bin.install "certinfo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/marco-introini/certinfo/releases/download/v0.2.2/certinfo_Darwin_arm64.tar.gz"
-      sha256 "a3fe0a5194ae565aa8935fee7e350fb546cf37ccd1849dad1eace54a8fee53b3"
+      url "https://github.com/marco-introini/certinfo/releases/download/v1.0.0/certinfo_Darwin_arm64.tar.gz"
+      sha256 "286f879577171bb364a53114c3dcd912ab9ca69624d45293e147404152e7060f"
 
       def install
         bin.install "certinfo"
@@ -29,15 +29,15 @@ class Certinfo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/marco-introini/certinfo/releases/download/v0.2.2/certinfo_Linux_x86_64.tar.gz"
-      sha256 "f1b201dddce328c3b77ed43fab2cc5a02b8ab2086371cf1da6185000f66a66fc"
+      url "https://github.com/marco-introini/certinfo/releases/download/v1.0.0/certinfo_Linux_x86_64.tar.gz"
+      sha256 "52ce3595d2a4b2b3a97ec099b4010a51532d3aec537734315d646fa983e0cd59"
       def install
         bin.install "certinfo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/marco-introini/certinfo/releases/download/v0.2.2/certinfo_Linux_arm64.tar.gz"
-      sha256 "d268a47a3d72dd2e73498a88a03beb0a8202f5d2c148480f7654d8f7051c5d27"
+      url "https://github.com/marco-introini/certinfo/releases/download/v1.0.0/certinfo_Linux_arm64.tar.gz"
+      sha256 "e80bb0471f539e850d74715c9a6b3ea99c1e70463b92ded9a0385bd7907bbe64"
       def install
         bin.install "certinfo"
       end
