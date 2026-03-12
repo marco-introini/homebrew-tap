@@ -5,21 +5,21 @@
 class Certinfo < Formula
   desc "CLI tool to analyze X.509 certificates and private keys"
   homepage "https://github.com/marco-introini/certinfo"
-  version "1.2.2"
+  version "1.2.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/marco-introini/certinfo/releases/download/v1.2.2/certinfo_Darwin_x86_64.tar.gz"
-      sha256 "e9adebe9f71cc41cec1b2ba2bbb9e6ea5a5f5d9bbf56b1ecd86b86113b2ee185"
+      url "https://github.com/marco-introini/certinfo/releases/download/v1.2.3/certinfo_Darwin_x86_64.tar.gz"
+      sha256 "424307b5e888f0a85f21a87836771b552a61e6a9711e672fe5c1b9c1ae674d01"
 
       define_method(:install) do
         bin.install "certinfo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/marco-introini/certinfo/releases/download/v1.2.2/certinfo_Darwin_arm64.tar.gz"
-      sha256 "67bd5b574896c4eee90297dc0bd195893fc5330a01fe92a644894bc1d82b61e7"
+      url "https://github.com/marco-introini/certinfo/releases/download/v1.2.3/certinfo_Darwin_arm64.tar.gz"
+      sha256 "b4b0a1c257b4e60d9b40d625abbcb7da76cb1817300b8d6b097fa1b58c5720cd"
 
       define_method(:install) do
         bin.install "certinfo"
@@ -29,15 +29,15 @@ class Certinfo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/marco-introini/certinfo/releases/download/v1.2.2/certinfo_Linux_x86_64.tar.gz"
-      sha256 "bcb08d17aaa984809c92e8a2dc3239727e4b8dd38c27de91ad82386f5e6a6528"
+      url "https://github.com/marco-introini/certinfo/releases/download/v1.2.3/certinfo_Linux_x86_64.tar.gz"
+      sha256 "939604c9b994d7212f4fb80f0649a319f2f80d5989a5661d62ef0d3a5bd28cd3"
       define_method(:install) do
         bin.install "certinfo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/marco-introini/certinfo/releases/download/v1.2.2/certinfo_Linux_arm64.tar.gz"
-      sha256 "758e804cef847869f3d80785ed1d27ebc6139583fd7402f2dcaad6c05792732d"
+      url "https://github.com/marco-introini/certinfo/releases/download/v1.2.3/certinfo_Linux_arm64.tar.gz"
+      sha256 "0ebaa21adc5cf2b98b95fff9920541aeac75dc1143402f6ddb5093f55b4a3c02"
       define_method(:install) do
         bin.install "certinfo"
       end
